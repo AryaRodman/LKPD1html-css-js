@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bali</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+
+.navbar{
+  background-color: #ffff;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navmenu a{
+  text-transform: capitalize;
+  font-size: 16px;
+  color: black;
+  padding: 10px 20px;
+  font-weight: 300;
+  transition: all .40s ease;
+}
+.navmenu a:hover{
+  color: orange;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+header img{
+  width: 50%;
+}
+.dropbtn {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+body{
+  background-size: cover;
+  background-image: url(bal.jpg);
+}
+main{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <h1 style="margin-left: 10px;"><img src="https://cdn6.agoda.net/images/kite-js/logo/agoda/color-default.svg" alt=""></h1>
+        <ul class="navmenu">
+            <li><a href="landingpage.html">Home</a></li>
+            <li><div class="dropdown">
+                <button class="dropbtn">Destinasi wisata</button>
+                <div class="dropdown-content">
+                  <a href="jak.html">Jakarta</a>
+                  <a href="bali.html">Bali</a>
+                  <a href="ban.html">Bandung</a>
+                </div>
+              </div></li>
+        </ul>
+    </div>
+</header>
+<main>
+  <div class="card" style="width: 18rem;">
+    <img src="gwk.jpg" class="card-img-top" alt="gwk">
+    <div class="card-body">
+      <h5 class="card-title">Taman budaya GWK</h5>
+      <p class="card-text">Sedang mencari ide perjalanan yang kaya akan budaya, dengan monumen bersejarah yang megah, atraksi tarian tradisional yang eksotis, dan acara yang penuh adrenalin dalam satu perhentian? Nah, Sobat Liburan tinggal mengunjungi Taman Budaya GWK. Saksikan berbagai keindahan tarian Bali seperti tarian Kecak yang eksotis, tarian Legong yang megah, serta banyak tarian lainnya yang memukau ditampilkan di sini. </p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#examPleModal">
+        Read more
+      </button>
+    
+      <div class="modal fade" id="examPleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Taman Garuda Wisnu Kencana</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Taman Budaya Garuda Wisnu Kencana, (bahasa Bali: ᬢᬫᬦ᭄ᬩᬸᬤᬬᬕᬭᬸᬤᬯᬶᬲ᭄ᬦᬸᬓᬾᬜ᭄ᬘᬦ, bahasa Inggris: Garuda Wisnu Kencana Cultural Park) atau kerap disebut dengan GWK, adalah sebuah taman wisata budaya di bagian selatan pulau Bali. Taman wisata ini terletak di Desa Ungasan, Kecamatan Kuta Selatan, Kabupaten Badung, kira-kira 40 kilometer di sebelah selatan Denpasar, ibu kota provinsi Bali.Di sini berdiri megah sebuah landmark atau maskot Bali, yakni patung Garuda Wisnu Kencana yang menggambarkan sosok Dewa Wisnu menunggangi tunggangannya, Garuda, setinggi 121 meter.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-warning">Review : 99+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="pantai.jpeg" class="card-img-top" alt="Pantai Kelingking Nusa Penida">
+    <div class="card-body">
+      <h5 class="card-title">Pantai Kelingking Nusa Penida</h5>
+      <p class="card-text">Pantai Kelingking akan membawa Sobat Liburan ke pengalaman di tingkat yang jauh lebih tinggi. Sebagai salah satu tempat yang paling menakjubkan di Bali, Pantai Kelingking layak dimasukan ke dalam daftar tempat yang wajib Sobat Liburan kunjungi di Bali.</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exAmpleModal">
+        Read more
+      </button>
+    
+      <div class="modal fade" id="exAmpleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Pantai kelingking nusa penida</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Terletak di Desa Bunga Mekar, Kecamatan Nusa Penida, Klungklung, Bali, pantai Kelingking merupakan salah satu kunjungan wisata mancanegara dengan segala keunikan yang dimilikinya. Dengan menuruni jalan setapak yang terjal, pengunjung dapat memanjakan dirinya berenang di pantai pasir putih yang jernih nan indah ini.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-warning">Review : 99+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="pura.jpg" class="card-img-top" alt="pura">
+    <div class="card-body">
+      <h5 class="card-title">Pura Ulun Danu Bratan</h5>
+      <p class="card-text"> Pura Ulun Danu Bratan adalah destinasi wisata yang sangat populer bagi turis lokal maupun mancanegara. Terletak di posisi strategis di jalan yang menyambungkan Bali Utara dan Selatan. Pura ikonik ini dikelilingi perairan yang tenang bagaikan cermin yang seakan-akan membuat Pura ini melayang. </p>
+      
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ExampleModal">
+        Read more
+      </button>
+    
+      <div class="modal fade" id="ExampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Pura Ulun Danu Bratan</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Pura Batur atau Pura Ulun Danu pertama kali didirikan pada abad ke-17. Pura ini didedikasikan untuk dewa Wisnu dan untuk dewi danau Dewi Danu.  Definisi Pura Ulun Danu menggambarkan pentingnya air bagi kemakmuran penduduk desa Batur dan bagi seluruh komunitas Hindu di Bali, terutama dalam mengairi sawah di pulau Bali.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-warning">Review : 99+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

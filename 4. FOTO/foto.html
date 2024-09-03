@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="image-container">
+        <img id="selected-image" src="gasing.jpeg" alt="Selected Image" style="opacity: 1;">
+    </div>
+    <div class="controls">
+        <label for="imageSelect">Pilih Gambar:</label>
+        <select id="imageSelect">
+            <option value="deargod.jpeg">El DearGod</option>
+            <option value="gasing.jpeg">El Gasing</option>
+            <option value="marmut.jpeg">El Marmut Uruguay</option>
+        </select>
+    
+        <label for="opacitySelect">Pilih Opacity:</label>
+        <select id="opacitySelect">
+            <option value="1">100%</option>
+            <option value="0.5">50%</option>
+            <option value="0.3">30%</option>
+        </select>
+        <button id="submit-btn">Kirim</button><br>
+    </div>
+    
+
+    <script>
+        const imageSelect = document.getElementById('imageSelect');
+        const opacitySelect = document.getElementById('opacitySelect');
+        const selectedImage = document.getElementById('selected-image');
+        const submitBtn = document.getElementById('submit-btn');
+
+        submitBtn.addEventListener('click', function() {
+            const selectedImageSrc = imageSelect.value;
+            const selectedOpacity = opacitySelect.value;
+
+            selectedImage.src = selectedImageSrc;
+            selectedImage.style.opacity = selectedOpacity;
+        });
+    </script>
+</body>
+</html>

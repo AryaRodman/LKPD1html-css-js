@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <h1>Opsi Jawaban & Poin</h1>
+            <div id="formContainer">
+                <div>
+                    <label>Opsi 1:</label><br>
+                    <input type="text" placeholder="Poin" name="poin" id="poin1">
+                    <input type="text" placeholder="Deskripsi poin" name="deskripsi" id="deskripsi1">
+                </div>
+            </div>
+            <button type="button" onclick="addOpsi()">+ Tambah Opsi</button>
+        </form>
+
+        <script>
+            let hitungOpsi = 1;
+
+            function addOpsi() {
+                hitungOpsi++;
+
+                const formContainer = document.getElementById("formContainer");
+                formContainer.innerHTML += `
+                    <br><div>
+                    <label>Opsi ${hitungOpsi}:</label><br>
+                    <input type="text" placeholder="Poin" name="poin" id="poin${hitungOpsi}">
+                    <input type="text" placeholder="Deskripsi poin" name="deskripsi" id="deskripsi${hitungOpsi}">
+                </div>`
+            }
+        </script>
+    </body>
+    </html>

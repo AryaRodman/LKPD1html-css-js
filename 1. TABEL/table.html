@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+</style>
+<body>
+    <table border="1px black solid" >
+        <tr>
+            <th>No</th>
+            <th>Keterangan</th>
+            <th>Bersedia Membayar</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Bersedia membayar <b>Dana Sumbangan Pembangunan (DSP)</b> sebesar <b>Rp. 8.500.000</b> dengan mekanisme pembayaran Dana Sumbangan Pendidikan</td>
+            <td><input type="radio" id="daftarul" name="" value="Lunas saat Daftar ulang">
+                <label for="html">Lunas saat Daftar ulang</label><hr>
+                <input type="radio" id="60%" name="" value="60%">
+                <label for="css">60 % dibayarkan saat daftar ulang, dan sisanya dibayarkan paling lambat tanggal 13 Juli 2024</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Bersedia membayar <b>Sumbangan Penyelenggaraan Pendidikan (SPP)</b> secara rutin setiap bulan sebesar <b>Rp. 550.000</b> yang dibayarkan sebelum tanggal 10 setiap bulannya kecuali bulan Juli 2024</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>
+                <b>Pembayan Lainnya.</b><br>
+            Setelah Putra/Putri kami diterima di SMK Wikrama Bogor. Kami juga bersedia memberikan : <br><br>a. Wakaf pembangunan Mesjid Al-Ikram 
+            </td>
+            <td>
+            <form id="paymentForm" onchange="submitForm()">
+                    <label class="radio-container">
+                        <input name="payment" type="radio"  value="300000"> 
+                    </label>
+                    <label class="radio-container">
+                        <input name="payment" type="radio"  value="300000"> 
+                    </label>
+                    <label for="html">Rp. 300.000</label><br>
+                    <!-- <input type="radio" id="500" value="300000">
+                    <label for="html">Rp. 500.000</label><br>
+                    <input type="radio" id="1000" value="300000">
+                    <label for="html">Rp. 1.000.000</label><br>
+                    <input type="radio" id="2000" value="300000">
+                    <label for="">Rp. 2.000.000</label><br>
+                    <input type="radio" id="5000" value="300000" >
+                    <label for="css">Rp. 5.000.000</label><br>
+                    <input type="radio" id="900" value="custom" >
+                    <label for="css">> Rp. 500.000 atau <span class="checkmark"></span>
+                        <input id="customAmount" style="margin-left: 10px;" type="number">
+                    </label> -->
+                </form>
+            </td>
+            <tr>
+                <td></td>
+                <td>b. <b>Zakat Infaq Sodaqoh</b> secara rutin setiap bulan</td>
+                <td>
+                    <input type="number" name="" id="">
+                </td>
+            </tr>
+        </tr>
+    </table>
+
+    <script>
+        // function submitForm() {
+        //     const hasil = document.getElementById('hasil')
+        //     const paymentForm = document.getElementById('paymentForm');
+        //     const selectedPayment = paymentForm.elements['payment'].value;
+            
+        //     let amount;
+
+        //     if (selectedPayment === 'custom') {
+        //         amount = document.getElementById('customAmount').value;
+        //     } else {
+        //         amount = selectedPayment;
+        //     }
+
+        //     hasil.innerHTML = selectedPayment
+        // }
+    </script>
+</body>
+</html>
